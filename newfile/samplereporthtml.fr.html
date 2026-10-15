@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quarterly Sales Report</title>
+<style>
+  :root { --navy:#1F3A5F; --text:#1a1a1a; --muted:#808080; --bg:#ffffff; --alt:#F7F9FC; --total:#EAF0F7; --border:#B8C4D6; --green:#2E7D32; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --navy:#8FB3E0; --text:#e6e6e6; --muted:#9a9a9a; --bg:#16191d; --alt:#1d2229; --total:#24303f; --border:#3a4658; --green:#66BB6A; color-scheme: dark; }
+  }
+  body { font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); margin: 0; }
+  .page { max-width: 760px; margin: 0 auto; padding: 40px 24px; line-height: 1.5; font-size: 15px; }
+  h1 { color: var(--navy); text-align: center; margin: 0; font-size: 30px; }
+  .sub { color: var(--muted); text-align: center; font-size: 13px; margin: 4px 0 20px; }
+  h2 { color: var(--navy); font-size: 19px; margin: 22px 0 8px; }
+  .green { color: var(--green); font-weight: bold; }
+  ul { margin: 0; padding-left: 22px; }
+  .wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: center; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { background: #1F3A5F; color: #fff; }
+  tbody tr:nth-child(even) { background: var(--alt); }
+  tr.total td { background: var(--total); font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Rapport de Ventes Trimestriel</h1>
+  <p class="sub">T3 2026 | Préparé par : Équipe des Ventes</p>
+
+  <h2>1. Résumé principal</h2>
+  <p>Ce trimestre, l'entreprise a réalisé un <b>chiffre d'affaires total de 48,6 lakh Rs.</b> , soit <span class="green">12% de plus</span> que le trimestre précédent. La <i>région Nord</i> a obtenu les meilleurs résultats, tandis que la <i>région Est</i> nécessite plus d'attention.</p>
+
+  <h2>2. Points Clés</h2>
+  <ul>
+    <li>Les nouveaux clients ont augmenté de <b>18%</b> .</li>
+    <li>Les ventes en ligne ont contribué à plus de la moitié du chiffre d'affaires total.</li>
+    <li>Deux nouveaux produits ont été lancés avec succès.</li>
+  </ul>
+
+  <h2>3. Performance par Région</h2>
+  <div class="wrap">
+  <table>
+    <thead><tr><th>Région</th><th>Revenu T2 (Rs. lakh)</th><th>Revenu T3 (Rs. lakh)</th><th>Croissance</th></tr></thead>
+    <tbody>
+      <tr><td>Nord</td><td>13.2</td><td>15.8</td><td>+19.7%</td></tr>
+      <tr><td>Sud</td><td>11.5</td><td>12.9</td><td>+12.2%</td></tr>
+      <tr><td>Ouest</td><td>9.8</td><td>10.6</td><td>+8.2%</td></tr>
+      <tr><td>Est</td><td>8.9</td><td>9.3</td><td>+4.5%</td></tr>
+      <tr class="total"><td>Total</td><td>43.4</td><td>48.6</td><td>+12.0%</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>4. Prochaines Étapes</h2>
+  <p><u>Le trimestre prochain, l'accent sera mis sur l'amélioration des ventes dans la région Est grâce au marketing local et à un meilleur soutien des distributeurs. L'objectif global pour le T4 est 52 lakh Rs. .</u></p>
+</div>
+</body>
+</html>
