@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quarterly Sales Report</title>
+<style>
+  :root { --navy:#1F3A5F; --text:#1a1a1a; --muted:#808080; --bg:#ffffff; --alt:#F7F9FC; --total:#EAF0F7; --border:#B8C4D6; --green:#2E7D32; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --navy:#8FB3E0; --text:#e6e6e6; --muted:#9a9a9a; --bg:#16191d; --alt:#1d2229; --total:#24303f; --border:#3a4658; --green:#66BB6A; color-scheme: dark; }
+  }
+  body { font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); margin: 0; }
+  .page { max-width: 760px; margin: 0 auto; padding: 40px 24px; line-height: 1.5; font-size: 15px; }
+  h1 { color: var(--navy); text-align: center; margin: 0; font-size: 30px; }
+  .sub { color: var(--muted); text-align: center; font-size: 13px; margin: 4px 0 20px; }
+  h2 { color: var(--navy); font-size: 19px; margin: 22px 0 8px; }
+  .green { color: var(--green); font-weight: bold; }
+  ul { margin: 0; padding-left: 22px; }
+  .wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: center; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { background: #1F3A5F; color: #fff; }
+  tbody tr:nth-child(even) { background: var(--alt); }
+  tr.total td { background: var(--total); font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Quarterly Sales Report</h1>
+  <p class="sub">Q3 2026 &nbsp;|&nbsp; Prepared by: Sales Team</p>
+
+  <h2>1. Major Summary</h2>
+  <p>This quarter the company achieved <b>total revenue of Rs. 48.6 lakh</b>, which is <span class="green">12% higher</span> than last quarter. The <i>North</i> region performed best, while the <i>East</i> region needs more attention.</p>
+
+  <h2>2. Key Highlights</h2>
+  <ul>
+    <li>New customers increased by <b>18%</b>.</li>
+    <li>Online sales contributed more than half of total revenue.</li>
+    <li>Two new products were launched successfully.</li>
+  </ul>
+
+  <h2>3. Region-wise Performance</h2>
+  <div class="wrap">
+  <table>
+    <thead><tr><th>Region</th><th>Q2 Revenue (Rs. lakh)</th><th>Q3 Revenue (Rs. lakh)</th><th>Growth</th></tr></thead>
+    <tbody>
+      <tr><td>North</td><td>13.2</td><td>15.8</td><td>+19.7%</td></tr>
+      <tr><td>South</td><td>11.5</td><td>12.9</td><td>+12.2%</td></tr>
+      <tr><td>West</td><td>9.8</td><td>10.6</td><td>+8.2%</td></tr>
+      <tr><td>East</td><td>8.9</td><td>9.3</td><td>+4.5%</td></tr>
+      <tr class="total"><td>Total</td><td>43.4</td><td>48.6</td><td>+12.0%</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>4. Next Steps</h2>
+  <p>Next quarter the focus will be on improving sales in the <b>East</b> region through local marketing and better distributor support. The overall target for Q4 is <u>Rs. 52 lakh</u>.</p>
+</div>
+</body>
+</html>
